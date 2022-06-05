@@ -66,7 +66,7 @@ def _create(name, pretrained=True, channels=3, classes=80, autoshape=True, verbo
         raise Exception(s) from e
 
 
-def custom(path='/opt/doods/yolov5x6.engine', autoshape=True, _verbose=True, device=None):
+def custom(path='yolov5s6.pt, yolov5m6.pt', autoshape=True, _verbose=True, device=None):
     # YOLOv5 custom or local model
     return _create(path, autoshape=autoshape, verbose=_verbose, device=device)
 
