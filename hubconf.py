@@ -66,7 +66,7 @@ def _create(name, pretrained=True, channels=3, classes=80, autoshape=True, verbo
         raise Exception(s) from e
 
 
-def surge(surge='models/surge.pt', autoshape=True, _verbose=True, device=None):
+def surge(surge='models/yolov5x6.engine', autoshape=True, _verbose=True, device=None):
     # YOLOv5 custom or local model
     return _create(path, autoshape=autoshape, verbose=_verbose, device=device)
 
