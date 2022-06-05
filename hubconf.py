@@ -68,7 +68,7 @@ def _create(name, pretrained=True, channels=3, classes=80, autoshape=True, verbo
 
 def custom(path='yolov5x6.engine', autoshape=True, _verbose=True, device=None):
     # YOLOv5 custom or local model
-    return _create(path, autoshape=autoshape, verbose=_verbose, device=device)
+    return _create(yolov5x6.engine, autoshape=autoshape, verbose=_verbose, device=device)
 
 
 def yolov5n(pretrained=True, channels=3, classes=80, autoshape=True, _verbose=True, device=None):
