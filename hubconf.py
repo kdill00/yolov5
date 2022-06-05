@@ -66,7 +66,7 @@ def _create(name, pretrained=True, channels=3, classes=80, autoshape=True, verbo
         raise Exception(s) from e
 
 
-def custom(path='/opt/doods/yolov5x6.engine', autoshape=True, _verbose=True, device=None):
+def custom(path='/opt/doods/', autoshape=True, _verbose=True, device=None):
     # YOLOv5 custom or local model
     return _create(path, autoshape=autoshape, verbose=_verbose, device=device)
 
@@ -74,8 +74,8 @@ def custom(path='/opt/doods/yolov5x6.engine', autoshape=True, _verbose=True, dev
 def yolov5n(pretrained=True, channels=3, classes=80, autoshape=True, _verbose=True, device=None):
     # YOLOv5-nano model https://github.com/ultralytics/yolov5
     return _create('yolov5n', pretrained, channels, classes, autoshape, _verbose, device)
-
-
+    return _create('yolov5s', pretrained, channels, classes, autoshape, _verbose, device)
+  
 def yolov5s(pretrained=True, channels=3, classes=80, autoshape=True, _verbose=True, device=None):
     # YOLOv5-small model https://github.com/ultralytics/yolov5
     return _create('yolov5s', pretrained, channels, classes, autoshape, _verbose, device)
@@ -99,7 +99,6 @@ def yolov5x(pretrained=True, channels=3, classes=80, autoshape=True, _verbose=Tr
 def yolov5n6(pretrained=True, channels=3, classes=80, autoshape=True, _verbose=True, device=None):
     # YOLOv5-nano-P6 model https://github.com/ultralytics/yolov5
     return _create('yolov5n6', pretrained, channels, classes, autoshape, _verbose, device)
-
 
 def yolov5s6(pretrained=True, channels=3, classes=80, autoshape=True, _verbose=True, device=None):
     # YOLOv5-small-P6 model https://github.com/ultralytics/yolov5
