@@ -103,7 +103,7 @@ def yolov5n6(pretrained=True, channels=3, classes=80, autoshape=True, _verbose=T
 
 def yolov5s6(pretrained=True, channels=3, classes=80, autoshape=True, _verbose=True, device=None):
     # YOLOv5-small-P6 model https://github.com/ultralytics/yolov5
-    return _create('yolov5s6' 'yolov5m', pretrained, channels, classes, autoshape, _verbose, device)
+    return _create('/opt/doods/yolov5s6.pt','/opt/doods/yolov5m.pt', pretrained, channels, classes, autoshape, _verbose, device)
 
 
 def yolov5m6(pretrained=True, channels=3, classes=80, autoshape=True, _verbose=True, device=None):
